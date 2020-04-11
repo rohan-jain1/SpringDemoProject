@@ -15,7 +15,7 @@ function sendDelete() {
 	console.log("delete:: " + userid);
 
 	$.ajax({
-		url: 'deleteuser',
+		url: 'user',
 		method: 'delete',
 		data : {
 			id : userid
@@ -34,7 +34,7 @@ function sendDelete() {
 </head>
 <body>
 
-<h2> AddUser </h2>
+<h2> Delete User </h2>
 
 <!-- 
 <form:form method="DELETE" action="user">
@@ -69,7 +69,7 @@ function sendDelete() {
 <input type="number" id="deleteinput" type="text" />
 <button onclick="sendDelete()">SendDelete</button>
 
-<div id="message" >hi</div>
+<div id="message" ></div>
 
 </body>
 </html>

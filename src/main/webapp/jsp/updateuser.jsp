@@ -11,20 +11,12 @@
 <body>
 
 
-<h2> AddUser </h2>
+<h2> UpdateUser </h2>
 
 <h2 > ${message}</h2>
 
-<form:form modelAttribute="user" method="POST" action="addusercontroller">
+<form:form modelAttribute="user" method="POST" action="updateusercontroller">
 	<table>
-		<tr>
-			<td>
-				<form:label style="display:none" path="userid">id</form:label>
-			</td>
-			<td>
-				<form:input style="display:none" path="userid"/>
-			</td>
-		</tr>
 		<tr>
 			<td>
 				<form:label path="name">Name</form:label>

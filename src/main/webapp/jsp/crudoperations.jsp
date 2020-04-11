@@ -17,15 +17,17 @@
 	<button>AddUser</button>&nbsp
 </a>
 
-<button>getUser</button>
+<a style="color:white;" href="/user">
+	<button>DisplayUsers</button>&nbsp
+</a>
 
 <sec:authorize access="hasRole('ADMIN')">
-	<a style="color:white;" href="/adduser">
+	<a style="color:white;" href="/selectuser">
 		<button>UpdateUser</button>&nbsp
 	</a>
 </sec:authorize>
 
-<a href="/deleteuser">
+<a style="color:white;" href="/deleteuser">
 	<sec:authorize access="hasRole('ADMIN')">
 		<button>DeleteUser</button>&nbsp
 	</sec:authorize>
